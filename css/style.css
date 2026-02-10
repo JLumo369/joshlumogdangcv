@@ -1,8 +1,14 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   background-color: #e1f1fd;
   color: black
+}
+
+main {
+  display: block;
+  margin: 0px 150px 0px 150px; 
 }
 
 /****************   Nav Section **********************/
@@ -190,4 +196,9 @@ input {
 
 textarea {
   padding: 21px;
+}
+
+main {
+  display: block;
+  margin: 0px 150px 0px 150px;
 }
