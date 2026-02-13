@@ -8,8 +8,8 @@ body {
 
 main {
   max-width: 1100px;
-  margin: auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 /****************   Nav Section **********************/
@@ -17,7 +17,10 @@ nav {
 	display: flex;
   justify-content: space-between;
   background-color: #099ad3;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #6fd6ff;
+}
+
+nav p {
   padding: 0px 20px;
 }
 
@@ -31,13 +34,36 @@ section a:hover {
   color: gold;
 }
 
+nav a {
+  text-decoration: none;
+  color: purple;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: gold;
+}
+
+footer a {
+  text-decoration: none;
+  color: purple;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: gold;
+}
+
 /***********************  Footer Section   **************************/
 footer {
   display: flex;
   justify-content: center;
   background-color: #099ad3;
-  border-top: 5px solid white;
-  padding: 20px;
+  border-top: 5px solid #6fd6ff;
+}
+
+footer p {
+   padding: 20px;
 }
 
 /*********** Splash Page ************************/
@@ -45,14 +71,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items:center;
-  padding: 10px 20px;
 }
 
 header h1 {
   color: orange;
   font-family: "Montserrat", sans-serif;
-  padding: 0px 50px;
-  padding-top: 10px;
 }
 
 header img {
@@ -80,38 +103,42 @@ header img {
 
 /************* Sections ********************/
 hr {
-height: 5px;
-background-color: #099ad3;
+  height: 5px;
+  background-color: #099ad3;
+}
+
+section {
+  border: 2px solid #099ad3;
+  border-radius: 15px;
+  padding: 10px 30px 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
 }
 
 section h2 {
   color: orange;
   font-family: "Montserrat", sans-serif;
-  padding: 0px 50px;
-  padding-top: 20px;
   text-decoration: underline;
 }
 
 section h3 {
   color: orange;
   font-family: "Montserrat", sans-serif;
-  padding: 0px 50px;
 }
 
 section dl {
   display: grid;
-  padding: 0px 50px;
   grid-template-columns: 400px 1fr;
 }
 
 section ul {
   list-style: circle;
-  padding: 0px 50px;
 }
 
 section a {
   text-decoration: none;
-  color: orange;
+  color: purple;
 }
 
 section a:hover {
@@ -139,14 +166,12 @@ section a:hover {
   border: 2px solid black;
   border-radius: 15px;
   background-color: #099ad3;
-  margin: 25px;
 }
 
 .card:hover {
   background-color: #099ad3;
-  border: 2px solid black;
+  border: 2px solid orange;
   border-radius: 15px;
-  margin: 25px;
   transform: scale(1.02);
 }
 
@@ -167,6 +192,12 @@ section a:hover {
     section dl {
       grid-template-columns: 1fr;
     }
+
+    main {
+      padding: 0px;
+      margin: 20px;
+    }
+    
 }
 
 /**************   Contact Page   *****************/
@@ -202,9 +233,4 @@ input {
 
 textarea {
   padding: 21px;
-}
-
-main {
-  display: block;
-  margin: 0px 150px 0px 150px;
 }
