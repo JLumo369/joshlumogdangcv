@@ -2,13 +2,14 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  background-color: #e1f1fd;
-  color: black
+  background-color: #f1f9ff;
+  color: black;
 }
 
 main {
-  display: block;
-  margin: 0px 150px 0px 150px; 
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 /****************   Nav Section **********************/
@@ -79,7 +80,8 @@ header img {
 
 /************* Sections ********************/
 hr {
-  height: 2px;
+height: 5px;
+background-color: #099ad3;
 }
 
 section h2 {
@@ -159,6 +161,10 @@ section a:hover {
     .three-col {
       display: grid;
       gap: 30px;
+      grid-template-columns: 1fr;
+    }
+
+    section dl {
       grid-template-columns: 1fr;
     }
 }
